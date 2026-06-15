@@ -35,7 +35,3 @@ This project is deployed on **Vercel** and supports automatic deployment from Gi
 
 ---
 
-
-<p align="center">
-  Made with ❤️ by <strong>Chirag Honnyal</strong>
-</p>
