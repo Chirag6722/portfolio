@@ -4,7 +4,7 @@ A premium, interactive, and fully responsive developer portfolio showcasing my j
 
 ##  Live Demo
 
-🔗 **Website:** https://chirag-honnyal.vercel.app
+ **Website:** https://chiraghonnyal-dev.vercel.app
 
 ---
 
@@ -29,7 +29,7 @@ This project is deployed on **Vercel** and supports automatic deployment from Gi
 
 ##  Connect With Me
 
--  Portfolio: https://chirag-honnyal.vercel.app
+-  Portfolio: https://chiraghonnyal-dev.vercel.app
 -  GitHub: https://github.com/Chirag6722
 -  LinkedIn: https://www.linkedin.com/in/chirag-honnyal/
 
