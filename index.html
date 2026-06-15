@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Chirag Honnyal - Software Engineer</title>
+  <meta name="description" content="Software Engineer | Competitive Programmer | Web Developer | DSA Enthusiast. Engineering student at DSATM, building scalable web applications." />
+  <meta name="author" content="Chirag Honnyal" />
+  <meta name="keywords" content="chirag honnyal, software engineer, competitive programmer, web developer, dsatm, codeforces, wanderlust, mindspace plus" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:title" content="Chirag Honnyal - Software Engineer" />
+  <meta property="og:description" content="Software Engineer | Competitive Programmer | Web Developer | DSA Enthusiast. Engineering student at DSATM." />
+  <meta property="og:type" content="profile" />
+  <meta property="profile:first_name" content="Chirag" />
+  <meta property="profile:last_name" content="Honnyal" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='black' /><text x='50' y='66' font-family='system-ui, -apple-system, sans-serif' font-weight='bold' font-size='45' fill='white' text-anchor='middle'>CH</text></svg>" />
+
+  <!-- Preload font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Theme initialization (prevent flash) -->
+  <script>
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.replace('light', 'dark');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#09090b');
+      }
+    } catch (_) {}
+  </script>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header" id="header" data-affix="false">
+    <div class="header-bar">
+      <a href="/" class="logo" aria-label="Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" fill="currentColor">
+          <!-- C -->
+          <rect x="0" y="0" width="8" height="40"></rect>
+          <rect x="8" y="0" width="16" height="8"></rect>
+          <rect x="8" y="32" width="16" height="8"></rect>
+          <!-- H -->
+          <rect x="32" y="0" width="8" height="40"></rect>
+          <rect x="52" y="0" width="8" height="40"></rect>
+          <rect x="40" y="16" width="12" height="8"></rect>
+        </svg>
+      </a>
+
+      <div class="header-spacer"></div>
+
+      <nav class="header-nav">
+        <a href="https://docs.google.com/document/d/1bZ-Hoa4_vsesUHWC6bQeD5pDpEnppvJviEWDiIQ5hxI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+          Resume
+        </a>
+        <button class="cmd-trigger" id="cmd-trigger" aria-label="Open command palette">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <kbd>Ctrl</kbd><kbd>K</kbd>
+        </button>
+      </nav>
+
+      <div class="header-right">
+        <span class="header-sep"></span>
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v1"/><path d="M12 20v1"/><path d="M3 12h1"/><path d="M20 12h1"/><path d="m18.364 5.636-.707.707"/><path d="m6.343 17.657-.707.707"/><path d="m5.636 5.636.707.707"/><path d="m17.657 17.657.707.707"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ MAIN CONTENT ═══ -->
+  <main class="site-main">
+    <div class="container">
+
+      <!-- Cover -->
+      <div class="cover fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" fill="none" id="js-cover-mark" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <!-- Hatching pattern parallel to y-axis (150 degrees) -->
+            <pattern id="hatch-pattern" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(150)">
+              <line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1.2" />
+            </pattern>
+          </defs>
+
+          <!-- Main Axis Line -->
+          <line x1="644.86" y1="24.00" x2="255.14" y2="249.00" stroke="currentColor" stroke-width="1" stroke-dasharray="4,4" opacity="0.12" />
+          <!-- Perpendicular Axis Line H -->
+          <line x1="430.51" y1="12.75" x2="664.34" y2="147.75" stroke="currentColor" stroke-width="1" stroke-dasharray="4,4" opacity="0.12" />
+          <!-- Perpendicular Axis Line C -->
+          <line x1="235.66" y1="125.25" x2="469.49" y2="260.25" stroke="currentColor" stroke-width="1" stroke-dasharray="4,4" opacity="0.12" />
+
+          <!-- Block H at (0.0, 0.0) -->
+          <polygon points="547.43,35.25 586.40,57.75 547.43,80.25 508.46,57.75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="508.46,57.75 547.43,80.25 547.43,62.25 508.46,39.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="586.40,57.75 547.43,80.25 547.43,62.25 586.40,39.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="547.43,17.25 586.40,39.75 547.43,62.25 508.46,39.75" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block H at (1.0, 0.0) -->
+          <polygon points="586.40,57.75 625.37,80.25 586.40,102.75 547.43,80.25" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="547.43,80.25 586.40,102.75 586.40,84.75 547.43,62.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="625.37,80.25 586.40,102.75 586.40,84.75 625.37,62.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="586.40,39.75 625.37,62.25 586.40,84.75 547.43,62.25" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block H at (0.0, 2.0) -->
+          <polygon points="469.49,80.25 508.46,102.75 469.49,125.25 430.51,102.75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="430.51,102.75 469.49,125.25 469.49,107.25 430.51,84.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="508.46,102.75 469.49,125.25 469.49,107.25 508.46,84.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="469.49,62.25 508.46,84.75 469.49,107.25 430.51,84.75" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block H at (1.0, 1.0) -->
+          <polygon points="547.43,80.25 586.40,102.75 547.43,125.25 508.46,102.75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="508.46,102.75 547.43,125.25 547.43,107.25 508.46,84.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="586.40,102.75 547.43,125.25 547.43,107.25 586.40,84.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="547.43,62.25 586.40,84.75 547.43,107.25 508.46,84.75" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block H at (2.0, 0.0) -->
+          <polygon points="625.37,80.25 664.34,102.75 625.37,125.25 586.40,102.75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="586.40,102.75 625.37,125.25 625.37,107.25 586.40,84.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="664.34,102.75 625.37,125.25 625.37,107.25 664.34,84.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="625.37,62.25 664.34,84.75 625.37,107.25 586.40,84.75" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block H at (1.0, 2.0) -->
+          <polygon points="508.46,102.75 547.43,125.25 508.46,147.75 469.49,125.25" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="469.49,125.25 508.46,147.75 508.46,129.75 469.49,107.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="547.43,125.25 508.46,147.75 508.46,129.75 547.43,107.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="508.46,84.75 547.43,107.25 508.46,129.75 469.49,107.25" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block H at (2.0, 2.0) -->
+          <polygon points="547.43,125.25 586.40,147.75 547.43,170.25 508.46,147.75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="508.46,147.75 547.43,170.25 547.43,152.25 508.46,129.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="586.40,147.75 547.43,170.25 547.43,152.25 586.40,129.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="547.43,107.25 586.40,129.75 547.43,152.25 508.46,129.75" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block C at (0.0, 5.0) -->
+          <polygon points="352.57,147.75 391.54,170.25 352.57,192.75 313.60,170.25" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="313.60,170.25 352.57,192.75 352.57,174.75 313.60,152.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="391.54,170.25 352.57,192.75 352.57,174.75 391.54,152.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="352.57,129.75 391.54,152.25 352.57,174.75 313.60,152.25" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block C at (0.0, 6.0) -->
+          <polygon points="313.60,170.25 352.57,192.75 313.60,215.25 274.63,192.75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="274.63,192.75 313.60,215.25 313.60,197.25 274.63,174.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="352.57,192.75 313.60,215.25 313.60,197.25 352.57,174.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="313.60,152.25 352.57,174.75 313.60,197.25 274.63,174.75" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block C at (0.0, 7.0) -->
+          <polygon points="274.63,192.75 313.60,215.25 274.63,237.75 235.66,215.25" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="235.66,215.25 274.63,237.75 274.63,219.75 235.66,197.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="313.60,215.25 274.63,237.75 274.63,219.75 313.60,197.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="274.63,174.75 313.60,197.25 274.63,219.75 235.66,197.25" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block C at (2.0, 5.0) -->
+          <polygon points="430.51,192.75 469.49,215.25 430.51,237.75 391.54,215.25" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="391.54,215.25 430.51,237.75 430.51,219.75 391.54,197.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="469.49,215.25 430.51,237.75 430.51,219.75 469.49,197.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="430.51,174.75 469.49,197.25 430.51,219.75 391.54,197.25" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block C at (1.0, 7.0) -->
+          <polygon points="313.60,215.25 352.57,237.75 313.60,260.25 274.63,237.75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="274.63,237.75 313.60,260.25 313.60,242.25 274.63,219.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="352.57,237.75 313.60,260.25 313.60,242.25 352.57,219.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="313.60,197.25 352.57,219.75 313.60,242.25 274.63,219.75" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block C at (2.0, 6.0) -->
+          <polygon points="391.54,215.25 430.51,237.75 391.54,260.25 352.57,237.75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="352.57,237.75 391.54,260.25 391.54,242.25 352.57,219.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="430.51,237.75 391.54,260.25 391.54,242.25 430.51,219.75" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="391.54,197.25 430.51,219.75 391.54,242.25 352.57,219.75" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+          <!-- Block C at (2.0, 7.0) -->
+          <polygon points="352.57,237.75 391.54,260.25 352.57,282.75 313.60,260.25" fill="none" stroke="currentColor" stroke-width="1" opacity="0.08" />
+          <polygon points="313.60,260.25 352.57,282.75 352.57,264.75 313.60,242.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="391.54,260.25 352.57,282.75 352.57,264.75 391.54,242.25" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <polygon points="352.57,219.75 391.54,242.25 352.57,264.75 313.60,242.25" fill="url(#hatch-pattern)" stroke="currentColor" stroke-width="1.2" />
+
+          <!-- Figure label -->
+          <text x="606.40" y="195.25" font-family="var(--font-mono)" font-size="10" font-weight="500" fill="currentColor" opacity="0.3" letter-spacing="1">FIG_001</text>
+        </svg>
+      </div>
+
+      <!-- Profile -->
+      <div class="profile fade-in fade-d1">
+        <div class="corner-dot corner-dot-tl"></div>
+        <div class="corner-dot corner-dot-tr"></div>
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="chirag.jpg" alt="Chirag Honnyal" id="profile-photo" />
+        </div>
+        <div class="profile-info">
+          <div class="profile-info-top"></div>
+          <div class="profile-name-block">
+            <div class="profile-name-row">
+              <h1 class="profile-name">Chirag Honnyal</h1>
+              <svg class="verified-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-label="Verified">
+                <path fill="currentColor" d="M24 12a4.454 4.454 0 0 0-2.564-3.91 4.437 4.437 0 0 0-.948-4.578 4.436 4.436 0 0 0-4.577-.948A4.44 4.44 0 0 0 12 0a4.423 4.423 0 0 0-3.9 2.564 4.434 4.434 0 0 0-2.43-.178 4.425 4.425 0 0 0-2.158 1.126 4.42 4.42 0 0 0-1.12 2.156 4.42 4.42 0 0 0 .183 2.421A4.456 4.456 0 0 0 0 12a4.465 4.465 0 0 0 2.576 3.91 4.433 4.433 0 0 0 .936 4.577 4.459 4.459 0 0 0 4.577.95A4.454 4.454 0 0 0 12 24a4.439 4.439 0 0 0 3.91-2.563 4.26 4.26 0 0 0 5.526-5.526A4.453 4.453 0 0 0 24 12Zm-13.709 4.917-4.38-4.378 1.652-1.663 2.646 2.646L15.83 7.4l1.72 1.591-7.258 7.926Z"/>
+              </svg>
+            </div>
+            <div class="profile-tagline">
+              <div class="tagline-container" id="tagline-container">
+                <p class="tagline-text active">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Overview Panel -->
+      <section class="panel fade-in fade-d2" id="overview">
+        <h2 class="sr-only">Overview</h2>
+        <div class="panel-body" style="position:relative">
+          <div class="overview-center-line"></div>
+
+          <div class="overview-grid">
+            <!-- Row 1: Work & Empty Slot -->
+            <div class="overview-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+              </div>
+              <p>Intern @ <a class="company-link" href="https://innovkraft.com" target="_blank" rel="noopener noreferrer">Innovkraft Inc</a></p>
+            </div>
+
+            <div class="overview-empty-slot"></div>
+
+            <!-- Row 2: Location & Local Time -->
+            <div class="overview-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <p><a href="https://www.google.com/maps/search/?api=1&query=India" target="_blank" rel="noopener noreferrer">India</a></p>
+            </div>
+
+            <div class="overview-row overview-clock-cell">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <p id="local-time">--:--</p>
+            </div>
+
+            <!-- Row 3: Phone & Email -->
+            <div class="overview-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <p><a href="tel:+918317362110">+91 83173 62110</a></p>
+            </div>
+
+            <div class="overview-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+              </div>
+              <p><a href="mailto:chiraghonnyal6722@gmail.com">chiraghonnyal6722@gmail.com</a></p>
+            </div>
+
+            <!-- Row 4: Pronouns -->
+            <div class="overview-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="m21 3-6.75 6.75"/><circle cx="10" cy="14" r="6"/></svg>
+              </div>
+              <p>he/him</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Social Links -->
+      <section class="panel fade-in fade-d3" id="social">
+        <h2 class="sr-only">Social Links</h2>
+        <div class="social-wrap">
+          <div class="social-bg">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="social-grid">
+            <a class="social-card" href="https://github.com/Chirag6722" target="_blank" rel="noopener">
+              <div class="social-icon">
+                <img alt="GitHub" loading="lazy" width="48" height="48" src="github.svg" />
+              </div>
+              <div class="social-text">
+                <h3>GitHub</h3>
+                <p>Chirag6722</p>
+              </div>
+              <svg class="social-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </a>
+
+            <a class="social-card" href="https://www.linkedin.com/in/chirag-honnyal/" target="_blank" rel="noopener">
+              <div class="social-icon">
+                <img alt="LinkedIn" loading="lazy" width="48" height="48" src="linkedin.svg" />
+              </div>
+              <div class="social-text">
+                <h3>LinkedIn</h3>
+                <p>chirag-honnyal</p>
+              </div>
+              <svg class="social-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- About Section -->
+      <section class="panel fade-in fade-d4" id="about">
+        <header class="panel-header">
+          <h2 class="panel-title">About</h2>
+        </header>
+        <div class="panel-body">
+          <div class="prose">
+            <p>I'm a second-year B.E. student in Information Science Engineering at Dayananda Sagar Academy of Technology & Management (DSATM), Bengaluru. I'm deeply passionate about competitive programming, data structures & algorithms, and building full-stack web applications.</p>
+            <p>Currently interning at <a href="https://innovkraft.com" target="_blank" rel="noopener noreferrer">Innovkraft Inc</a>, where I'm gaining hands-on industry experience. I'm an active competitive programmer on Codeforces, constantly sharpening my problem-solving skills through regular contests and practice.</p>
+            <p>I love building real-world projects that solve meaningful problems — from full-stack travel platforms to interactive web experiences. I'm always learning, exploring new technologies, and pushing myself to become a better engineer every day.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Codeforces Heatmap -->
+      <section class="panel fade-in fade-d5" id="codeforces">
+        <h2 class="sr-only">Codeforces Submissions</h2>
+        <div class="heatmap-section">
+          <div class="heatmap-top">
+            <span id="heatmap-total-text">Loading submissions...</span>
+            <a href="https://codeforces.com/profile/chiraghonnyal6722" target="_blank" rel="noopener noreferrer">@chiraghonnyal6722</a>
+          </div>
+          <div class="heatmap-area" id="heatmap-container">
+            <div class="heatmap-loader" id="heatmap-loading">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>
+            </div>
+          </div>
+          <div class="heatmap-footer">
+            <div class="heatmap-legend" id="heatmap-legend" style="display:none">
+              <span>Less</span>
+              <div class="heatmap-cell" data-level="0"></div>
+              <div class="heatmap-cell" data-level="1"></div>
+              <div class="heatmap-cell" data-level="2"></div>
+              <div class="heatmap-cell" data-level="3"></div>
+              <div class="heatmap-cell" data-level="4"></div>
+              <span>More</span>
+            </div>
+            <div class="heatmap-stats" id="heatmap-stats" style="display:none"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Education -->
+      <section class="panel" id="education">
+        <header class="panel-header">
+          <h2 class="panel-title">Education</h2>
+        </header>
+        <div class="edu-wrap">
+          <div class="edu-timeline">
+            <!-- DSATM -->
+            <div class="edu-item">
+              <div class="edu-head">
+                <div class="edu-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                </div>
+                <h4 class="edu-name">Dayananda Sagar Academy of Technology & Management (DSATM)</h4>
+                <svg class="edu-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+              <div class="edu-date">
+                <span>2024</span>
+                <span class="dash">—</span>
+                <span>Present</span>
+              </div>
+              <div class="edu-content">
+                <ul class="edu-bullets">
+                  <li><strong>B.E</strong> in Information Science</li>
+                  <li><strong>SGPA:</strong> 8.29</li>
+                  <li><strong>Relevant Coursework:</strong> Data Structures, Algorithms, OOPs, DBMS, Web Development, Competitive Programming</li>
+                </ul>
+              </div>
+              <ul class="edu-tags">
+                <li><span class="tag">Data Structures</span></li>
+                <li><span class="tag">Algorithms</span></li>
+                <li><span class="tag">OOPs</span></li>
+                <li><span class="tag">DBMS</span></li>
+                <li><span class="tag">Web Development</span></li>
+                <li><span class="tag">Competitive Programming</span></li>
+              </ul>
+            </div>
+
+            <!-- Vagdevi -->
+            <div class="edu-item">
+              <div class="edu-head">
+                <div class="edu-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                </div>
+                <h4 class="edu-name">Vagdevi PU Science College</h4>
+                <svg class="edu-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+              <div class="edu-date">
+                <span>2022</span>
+                <span class="dash">—</span>
+                <span>2024</span>
+              </div>
+              <div class="edu-content">
+                <ul class="edu-bullets">
+                  <li><strong>12th:</strong> 90.33%</li>
+                  <li><strong>Basketball</strong> player</li>
+                  <li><strong>Relevant Study:</strong> C</li>
+                </ul>
+              </div>
+              <ul class="edu-tags">
+                <li><span class="tag">Mathematics</span></li>
+                <li><span class="tag">Physics</span></li>
+                <li><span class="tag">Chemistry</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Tech Stack -->
+      <section class="panel" id="stack">
+        <header class="panel-header">
+          <h2 class="panel-title">Stack</h2>
+        </header>
+        <div class="stack-body">
+          <ul class="stack-list" id="stack-list">
+            <!-- Filled by JS -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Projects -->
+      <section class="panel" id="projects">
+        <header class="panel-header">
+          <h2 class="panel-title">Projects <sup class="panel-count">(2)</sup></h2>
+        </header>
+        <div class="projects-list">
+
+          <!-- WanderLust -->
+          <div class="project expanded">
+            <div class="project-head">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h4 class="project-name">WanderLust</h4>
+              <div class="project-actions">
+                <a href="https://github.com/Chirag6722/WanderLust" target="_blank" rel="noopener noreferrer" title="View Source">
+                  <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://wanderlust-f3ua.onrender.com/listings" target="_blank" rel="noopener noreferrer" title="Live Demo">
+                  <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                </a>
+                <svg class="project-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-desc">A full-stack travel stay web application inspired by Airbnb</p>
+              <ul class="project-bullets">
+                <li>Developed a full-stack lodging rental platform using <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong></li>
+                <li>Integrated interactive maps with <strong>Mapbox</strong> for geolocation search and property mapping</li>
+                <li>Implemented secure user authentication and reviews using <strong>Passport.js</strong></li>
+                <li>Configured cloud media storage using <strong>Cloudinary</strong> for seamless listing image uploads</li>
+              </ul>
+              <ul class="project-tags">
+                <li><span class="tag">Node.js</span></li>
+                <li><span class="tag">Express.js</span></li>
+                <li><span class="tag">MongoDB</span></li>
+                <li><span class="tag">EJS</span></li>
+                <li><span class="tag">Passport.js</span></li>
+                <li><span class="tag">Mapbox</span></li>
+                <li><span class="tag">Cloudinary</span></li>
+                <li><span class="tag">Bootstrap</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MindSpace+ -->
+          <div class="project expanded">
+            <div class="project-head">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h4 class="project-name">MindSpace+</h4>
+              <div class="project-actions">
+                <a href="https://github.com/Chirag6722/mindspace-plus" target="_blank" rel="noopener noreferrer" title="View Source">
+                  <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://mindspace-plus.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live Demo">
+                  <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                </a>
+                <svg class="project-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-desc">Built a full-featured infinite-canvas note-taking application with React, TypeScript, and Tailwind CSS, featuring drag-and-drop sticky notes, mind-map connections, multi-board organization, and JSON/Markdown/image export.</p>
+              <ul class="project-bullets">
+                <li>Developed an infinite-canvas notes application supporting pan/zoom interactions, drag-and-resize sticky notes, and a custom SVG-based connection system for visualizing relationships between ideas</li>
+                <li>Implemented a multi-board workspace with persistent state management via localStorage, including custom React hooks for board/note CRUD operations</li>
+                <li>Built a rich-text editor (bold, italic, lists) and interactive checklist component from scratch using the contentEditable API and React state</li>
+                <li>Designed export/import functionality supporting JSON (full backup/restore), Markdown (structured outlines), and PNG image snapshots using html-to-image</li>
+              </ul>
+              <ul class="project-tags">
+                <li><span class="tag">React</span></li>
+                <li><span class="tag">TypeScript</span></li>
+                <li><span class="tag">Vite</span></li>
+                <li><span class="tag">Tailwind CSS</span></li>
+                <li><span class="tag">HTML5 Canvas/SVG</span></li>
+                <li><span class="tag">localStorage</span></li>
+                <li><span class="tag">Lucide Icons</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Experience (blank) -->
+      <section class="panel" id="experience">
+        <header class="panel-header">
+          <h2 class="panel-title">Experience</h2>
+        </header>
+        <div class="exp-empty">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+          <p>More coming soon... Stay tuned!</p>
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-social">
+          <a href="https://github.com/Chirag6722" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chirag-honnyal/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://docs.google.com/document/d/1bZ-Hoa4_vsesUHWC6bQeD5pDpEnppvJviEWDiIQ5hxI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+              <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+              <circle cx="12" cy="13" r="2"/>
+              <path d="M16 18c0-1.5-1.8-2-4-2s-4 .5-4 2"/>
+            </svg>
+          </a>
+        </div>
+        <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Heatmap tooltip -->
+  <div class="heatmap-tooltip" id="heatmap-tooltip"></div>
+
+  <!-- ═══ COMMAND PALETTE ═══ -->
+  <div class="cmd-overlay" id="cmd-overlay" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="cmd-palette" id="cmd-palette">
+      <div class="cmd-search-row">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" class="cmd-input" id="cmd-input" placeholder="Type a command or search..." autocomplete="off" spellcheck="false" />
+        <button class="cmd-close-btn" id="cmd-close-btn" aria-label="Close">✕</button>
+      </div>
+      <div class="cmd-list" id="cmd-list"></div>
+      <div class="cmd-footer">
+        <div class="cmd-footer-preview">
+          <div class="cmd-footer-avatar">CH</div>
+        </div>
+        <div class="cmd-footer-hints">
+          <span class="cmd-footer-hint"><span id="cmd-footer-action">Go to Page</span><kbd>↵</kbd></span>
+          <span class="cmd-footer-hint">Exit<kbd>Esc</kbd></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
