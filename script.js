@@ -437,9 +437,9 @@
     setInterval(cycleTagline, 2200);
   }
 
-  // ─── Education Accordion Toggle ───
-  document.querySelectorAll('.edu-item').forEach(item => {
-    const head = item.querySelector('.edu-head');
+  // ─── Education & Experience Accordion Toggle ───
+  document.querySelectorAll('.edu-item, .exp-item').forEach(item => {
+    const head = item.querySelector('.edu-head, .exp-head');
     if (head) {
       head.addEventListener('click', () => {
         item.classList.toggle('expanded');
@@ -524,7 +524,7 @@
       { group: 'Portfolio',     label: 'Projects',   type: 'scroll', target: '#projects',   icon: IC.projects },
       { group: 'Social Links',  label: 'GitHub',     type: 'link',   target: 'https://github.com/Chirag6722',                   icon: IC.github },
       { group: 'Social Links',  label: 'LinkedIn',   type: 'link',   target: 'https://www.linkedin.com/in/chirag-honnyal/',     icon: IC.linkedin },
-      { group: 'Social Links',  label: 'Resume',     type: 'link',   target: 'https://docs.google.com/document/d/1bZ-Hoa4_vsesUHWC6bQeD5pDpEnppvJviEWDiIQ5hxI/edit?usp=sharing', icon: IC.resume },
+      { group: 'Social Links',  label: 'Resume',     type: 'link',   target: 'https://drive.google.com/file/d/1mrMovv68sHHCzyJIH0UClvPzOGpQq9ET/view?usp=sharing', icon: IC.resume },
       { group: 'Theme',         label: 'Light',      type: 'theme',  target: 'light',       icon: IC.sun },
       { group: 'Theme',         label: 'Dark',       type: 'theme',  target: 'dark',        icon: IC.moon },
     ];
