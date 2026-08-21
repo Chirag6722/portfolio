@@ -307,8 +307,143 @@
           <div class="prose">
             <p>I'm a second-year B.E. student in Information Science Engineering at Dayananda Sagar Academy of Technology & Management (DSATM), Bengaluru. I'm deeply passionate about competitive programming, data structures & algorithms, and building full-stack web applications.</p>
             <p>Currently interning at <a href="https://innovkraft.com" target="_blank" rel="noopener noreferrer">Innovkraft Inc</a>, where I'm gaining hands-on industry experience. I'm an active competitive programmer on Codeforces, constantly sharpening my problem-solving skills through regular contests and practice.</p>
+            <p>Most of my time goes into open source. I have 37 pull requests merged across 10 projects, including a fix in <a href="https://github.com/openai/openai-agents-python/pull/4457" target="_blank" rel="noopener noreferrer">OpenAI's agents framework</a> and an open pull request in <a href="https://github.com/google-gemini/gemini-cli/pull/28832" target="_blank" rel="noopener noreferrer">Google's Gemini CLI</a>. The work I enjoy most is finding checks that quietly do not check — a CI job that goes green before the artifact exists, a test that skips on the platform it was written for, a lint that cannot fail.</p>
             <p>I love building real-world projects that solve meaningful problems — from full-stack travel platforms to interactive web experiences. I'm always learning, exploring new technologies, and pushing myself to become a better engineer every day.</p>
           </div>
+        </div>
+      </section>
+
+      <!-- Separator -->
+      <div class="sep"></div>
+
+      <!-- Open Source Section -->
+      <section class="panel fade-in fade-d5" id="open-source">
+        <header class="panel-header">
+          <h2 class="panel-title">Open Source <sup class="panel-count">(37 merged)</sup></h2>
+        </header>
+        <div class="panel-body">
+          <div class="prose">
+            <p>37 pull requests merged across 10 open-source projects. Most of my work is a single defect class: a check that reports success without actually checking — a workflow that passes before the artifact exists, a lint that cannot fail, a test that is skipped on the platform it was written for. Selected work below.</p>
+          </div>
+        </div>
+        <div class="projects-list">
+
+          <!-- OpenAI -->
+          <div class="project expanded">
+            <div class="project-head">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+              </div>
+              <h4 class="project-name">OpenAI &middot; openai-agents-python</h4>
+              <div class="project-actions">
+                <a href="https://github.com/openai/openai-agents-python/pull/4457" target="_blank" rel="noopener noreferrer" title="View Pull Request">
+                  <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <svg class="project-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-desc">Merged fix in OpenAI's multi-agent framework.</p>
+              <ul class="project-bullets">
+                <li><strong>#4457</strong> &mdash; <em>fix(realtime): truncate audio at zero elapsed time.</em> Audio truncation computed a negative offset when no time had elapsed, so a turn interrupted immediately was cut at an invalid position</li>
+              </ul>
+              <ul class="project-tags">
+                <li><span class="tag">Python</span></li>
+                <li><span class="tag">Realtime Audio</span></li>
+                <li><span class="tag">Merged</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Google -->
+          <div class="project expanded">
+            <div class="project-head">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line></svg>
+              </div>
+              <h4 class="project-name">Google &middot; gemini-cli</h4>
+              <div class="project-actions">
+                <a href="https://github.com/google-gemini/gemini-cli/pull/28832" target="_blank" rel="noopener noreferrer" title="View Pull Request">
+                  <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <svg class="project-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-desc">Open pull request, reviewed and endorsed by another contributor who reproduced the diagnosis independently.</p>
+              <ul class="project-bullets">
+                <li><strong>#28832</strong> &mdash; replaced blanket <code>skipIf(platform === 'win32')</code> guards with runtime capability probes, so a test skips only when the host genuinely lacks the capability and reports why</li>
+                <li>Diagnosed the underlying failure as an MSYS runtime conflict rather than a Windows limitation; a reviewer confirmed it by running the suite under native PowerShell and CMD, where it passes</li>
+              </ul>
+              <ul class="project-tags">
+                <li><span class="tag">TypeScript</span></li>
+                <li><span class="tag">Vitest</span></li>
+                <li><span class="tag">Cross-platform</span></li>
+                <li><span class="tag">Open &middot; in review</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bernstein -->
+          <div class="project expanded">
+            <div class="project-head">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.66 0 3.22.45 4.56 1.24"></path></svg>
+              </div>
+              <h4 class="project-name">bernstein <span class="panel-count">13 merged</span></h4>
+              <div class="project-actions">
+                <a href="https://github.com/sipyourdrink-ltd/bernstein/pulls?q=is%3Apr+author%3AChirag6722" target="_blank" rel="noopener noreferrer" title="View Pull Requests">
+                  <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <svg class="project-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-desc">Deterministic orchestrator for CLI coding agents. Mostly CI, release automation, and test-integrity work.</p>
+              <ul class="project-bullets">
+                <li><strong>#3999</strong> &mdash; added a CI gate for pinned docs requirements. A reviewer proved my first version could never fail; I rewrote it and mutation-tested every flag to confirm the test actually bites</li>
+                <li><strong>#3898</strong> &mdash; the publish workflow verified releases against an API that reports availability before the artifact is downloadable, so the smoke tests could pass against a package that was not yet installable</li>
+                <li><strong>#4089</strong> &mdash; the release bump regenerated seven manifests but committed four, shipping stale version files. Replaced the hand-kept list with a derived constant plus a guard that fails when the two disagree</li>
+                <li><strong>#4014</strong> &mdash; workflow tooling emitted OS-native paths, producing backslashes on Windows. Fixed by choosing a type that cannot represent the wrong thing</li>
+              </ul>
+              <ul class="project-tags">
+                <li><span class="tag">Python</span></li>
+                <li><span class="tag">GitHub Actions</span></li>
+                <li><span class="tag">pytest</span></li>
+                <li><span class="tag">Release automation</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- truthlog -->
+          <div class="project expanded">
+            <div class="project-head">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              </div>
+              <h4 class="project-name">truthlog <span class="panel-count">9 merged</span></h4>
+              <div class="project-actions">
+                <a href="https://github.com/thegoodengineer/truthlog/pulls?q=is%3Apr+author%3AChirag6722" target="_blank" rel="noopener noreferrer" title="View Pull Requests">
+                  <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <svg class="project-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-desc">VS Code extension that records the real exit code of every terminal command.</p>
+              <ul class="project-bullets">
+                <li><strong>#12</strong> &mdash; set up GitHub Actions CI from scratch and removed the hidden host dependencies that stopped the test suite running on a single machine</li>
+                <li><strong>#7</strong> &mdash; output truncation at <code>maxOutputBytes</code> could cut a multi-byte character in half, corrupting the recorded output</li>
+                <li><strong>#9</strong> &mdash; command history was ordered by when output finished draining rather than when the command ran, so entries appeared out of order</li>
+              </ul>
+              <ul class="project-tags">
+                <li><span class="tag">TypeScript</span></li>
+                <li><span class="tag">VS Code API</span></li>
+                <li><span class="tag">CI</span></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </section>
 
