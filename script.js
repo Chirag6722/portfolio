@@ -526,7 +526,7 @@
       { group: 'Portfolio',     label: 'Projects',   type: 'scroll', target: '#projects',   icon: IC.projects },
       { group: 'Social Links',  label: 'GitHub',     type: 'link',   target: 'https://github.com/Chirag6722',                   icon: IC.github },
       { group: 'Social Links',  label: 'LinkedIn',   type: 'link',   target: 'https://www.linkedin.com/in/chirag-honnyal/',     icon: IC.linkedin },
-      { group: 'Social Links',  label: 'Resume',     type: 'link',   target: 'https://drive.google.com/file/d/1sjpHs1bvxBxlc0zvVY11D--Pg6kmonCl/view?usp=sharing', icon: IC.resume },
+      { group: 'Social Links',  label: 'Resume',     type: 'link',   target: 'https://drive.google.com/file/d/1Z6t_2FyWR0YhEgNE1s0Vg5Y5dVTHErdp/view?usp=sharing', icon: IC.resume },
       { group: 'Theme',         label: 'Light',      type: 'theme',  target: 'light',       icon: IC.sun },
       { group: 'Theme',         label: 'Dark',       type: 'theme',  target: 'dark',        icon: IC.moon },
     ];
